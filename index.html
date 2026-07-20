@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>BookHaven | Premier Online Bookstore & Literature Hub</title>
+  <meta name="title" content="BookHaven | Premier Online Bookstore & Literature Hub">
+  <meta name="description"
+    content="Discover millions of bestselling books, technology guides, classic literature, business strategies, and fiction at BookHaven with fast delivery and member perks.">
+  <meta name="keywords"
+    content="bookstore, buy books online, fiction books, tech books, bestsellers, discount books, BookHaven">
+  <meta name="author" content="BookHaven Team">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bookhaven-store.vercel.app/">
+  <meta property="og:title" content="BookHaven | Premier Online Bookstore">
+  <meta property="og:description"
+    content="Discover millions of bestselling books with fast delivery and premium membership perks.">
+  <meta property="og:image" content="images/hero-book.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="BookHaven | Premier Online Bookstore">
+  <meta property="twitter:description"
+    content="Discover millions of bestselling books with fast delivery and premium membership perks.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       1. Loading Screen (Preloader)
+       ========================================== -->
+  <div id="preloader">
+    <div class="book-loader">
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+    </div>
+    <div class="preloader-text">Loading BookHaven...</div>
+  </div>
+
+  <!-- ==========================================
+       2. Sticky Navigation Bar
+       ========================================== -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+        <div class="logo-text">Book<span>Haven</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#featured" class="nav-link">Books</a>
+        <a href="#bestsellers" class="nav-link">Best Sellers</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Search Toggle -->
+        <button class="btn-icon search-toggle-btn" aria-label="Search Books">
+          <i class="fas fa-search"></i>
+        </button>
+
+        <!-- Cart Drawer Toggle -->
+        <button class="btn-icon cart-toggle-btn" aria-label="View Shopping Cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge cart-count">0</span>
+        </button>
+
+        <!-- Dark/Light Mode Toggle -->
+        <button class="btn-icon theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- ==========================================
+         3. Hero Section
+         ========================================== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-left">
+          <div class="hero-badge">
+            <i class="fas fa-sparkles"></i> Welcome to Premier Literature
+          </div>
+          <h1 class="hero-title">
+            Unlock Endless Knowledge &amp; <span>Timeless Stories</span>
+          </h1>
+          <p class="hero-description">
+            Explore over 50,000+ curated titles ranging from computer science masterclasses to captivating fiction.
+            Enjoy fast nationwide shipping and reader rewards.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#featured" class="btn btn-primary">
+              Shop Now <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="books.html" class="btn btn-secondary">
+              Explore Books <i class="fas fa-compass"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>50k+</h4>
+              <p>Books Sold</p>
+            </div>
+            <div class="stat-item">
+              <h4>12k+</h4>
+              <p>Happy Readers</p>
+            </div>
+            <div class="stat-item">
+              <h4>4.9 ★</h4>
+              <p>Store Rating</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper reveal-right">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+            alt="Featured Book Showcase" class="hero-img"
+            style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. Services Section
+         ========================================== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card reveal delay-1">
+            <div class="service-icon"><i class="fas fa-truck-fast"></i></div>
+            <h3 class="service-title">Free Nationwide Shipping</h3>
+            <p class="service-text">Complimentary standard delivery on all eligible orders over $35 with real-time
+              tracking.</p>
+          </div>
+
+          <div class="service-card reveal delay-2">
+            <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+            <h3 class="service-title">100% Secure Payment</h3>
+            <p class="service-text">Bank-grade end-to-end encryption supporting Visa, MasterCard, PayPal, and Apple Pay.
+            </p>
+          </div>
+
+          <div class="service-card reveal delay-3">
+            <div class="service-icon"><i class="fas fa-rotate-left"></i></div>
+            <h3 class="service-title">30-Day Easy Returns</h3>
+            <p class="service-text">Hassle-free 30-day money-back guarantee if you are not fully satisfied with your
+              purchase.</p>
+          </div>
+
+          <div class="service-card reveal delay-4">
+            <div class="service-icon"><i class="fas fa-headset"></i></div>
+            <h3 class="service-title">24/7 Dedicated Support</h3>
+            <p class="service-text">Our passionate team of bookworms is available around the clock to assist your
+              inquiry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. About Us Section
+         ========================================== -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-image-column reveal-left">
+          <div style="position: relative;">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80"
+              alt="About BookHaven Store"
+              style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; max-height: 480px; object-fit: cover;">
+            <div class="about-experience-badge">
+              <h3 style="font-size: 2.2rem; font-weight: 800;">10+</h3>
+              <p style="font-size: 0.85rem; font-weight: 600;">Years of Excellence</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-column reveal-right">
+          <span class="section-subtitle">About Our Haven</span>
+          <h2 class="section-title">Nurturing Passion for Reading Since 2016</h2>
+          <p class="section-description" style="margin-bottom: 1.5rem;">
+            BookHaven was founded with a singular mission: to connect passionate readers with transformative books. From
+            engineering textbooks to timeless classics, we curating only the highest-quality literature.
+          </p>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div
+              style="background: var(--bg-alt); padding: 1.2rem; border-radius: var(--radius-md); border-left: 4px solid var(--primary);">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;"><i class="fas fa-bullseye"
+                  style="color: var(--primary);"></i> Our Mission</h4>
+              <p style="font-size: 0.88rem;">To make lifelong learning accessible, enjoyable, and inspiring for
+                everyone.</p>
+            </div>
+
+            <div
+              style="background: var(--bg-alt); padding: 1.2rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent-dark);">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;"><i class="fas fa-eye"
+                  style="color: var(--accent-dark);"></i> Our Vision</h4>
+              <p style="font-size: 0.88rem;">To build the premier global community for literature lovers and tech minds
+                alike.</p>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn-primary">Read Full Story <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. Features Highlight
+         ========================================== -->
+    <section class="section section-alt">
+      <div class="container features-wrapper">
+        <div class="reveal-left">
+          <span class="section-subtitle">Why Choose Us</span>
+          <h2 class="section-title">Engineered For The Ultimate Book Shopping Experience</h2>
+          <p class="section-description" style="margin-bottom: 2rem;">
+            We combine high-tech logistics with genuine literary passion to ensure your orders arrive quickly in mint
+            condition.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon-box"><i class="fas fa-layer-group"></i></div>
+              <div>
+                <h4 style="font-size: 1.05rem;">Vast Curated Catalog</h4>
+                <p style="font-size: 0.88rem;">Over 50,000 titles carefully selected by industry domain experts.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-box"><i class="fas fa-tags"></i></div>
+              <div>
+                <h4 style="font-size: 1.05rem;">Best Price Guarantee</h4>
+                <p style="font-size: 0.88rem;">We price-match verified retailers to ensure you get maximum value.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-box"><i class="fas fa-award"></i></div>
+              <div>
+                <h4 style="font-size: 1.05rem;">Verified Author Signings</h4>
+                <p style="font-size: 0.88rem;">Exclusive access to autographed first editions and limited releases.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right" style="text-align: center;">
+          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80"
+            alt="Feature Overview"
+            style="max-height: 420px; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15)); border-radius: var(--radius-md); width: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. Book Categories
+         ========================================== -->
+    <section id="categories" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Browse By Theme</span>
+          <h2 class="section-title">Explore Popular Book Categories</h2>
+          <p class="section-description">Find your next favorite read categorized by domain expertise and genre.</p>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-card reveal delay-1" onclick="window.location.href='books.html'">
+            <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="category-name">Technology</h3>
+            <span class="category-count">1,240+ Books</span>
+          </div>
+
+          <div class="category-card reveal delay-2" onclick="window.location.href='books.html'">
+            <div class="category-icon"><i class="fas fa-briefcase"></i></div>
+            <h3 class="category-name">Business</h3>
+            <span class="category-count">850+ Books</span>
+          </div>
+
+          <div class="category-card reveal delay-3" onclick="window.location.href='books.html'">
+            <div class="category-icon"><i class="fas fa-brain"></i></div>
+            <h3 class="category-name">Self Help</h3>
+            <span class="category-count">920+ Books</span>
+          </div>
+
+          <div class="category-card reveal delay-4" onclick="window.location.href='books.html'">
+            <div class="category-icon"><i class="fas fa-flask"></i></div>
+            <h3 class="category-name">Science</h3>
+            <span class="category-count">610+ Books</span>
+          </div>
+
+          <div class="category-card reveal delay-1" onclick="window.location.href='books.html'">
+            <div class="category-icon"><i class="fas fa-dragon"></i></div>
+            <h3 class="category-name">Fiction</h3>
+            <span class="category-count">2,100+ Books</span>
+          </div>
+
+          <div class="category-card reveal delay-2" onclick="window.location.href='books.html'">
+            <div class="category-icon"><i class="fas fa-landmark"></i></div>
+            <h3 class="category-name">History</h3>
+            <span class="category-count">540+ Books</span>
+          </div>
+
+          <div class="category-card reveal delay-3" onclick="window.location.href='books.html'">
+            <div class="category-icon"><i class="fas fa-heart"></i></div>
+            <h3 class="category-name">Romance</h3>
+            <span class="category-count">780+ Books</span>
+          </div>
+
+          <div class="category-card reveal delay-4" onclick="window.location.href='books.html'">
+            <div class="category-icon"><i class="fas fa-child"></i></div>
+            <h3 class="category-name">Children's Books</h3>
+            <span class="category-count">430+ Books</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         8. Featured Books (With Category Filter)
+         ========================================== -->
+    <section id="featured" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Curated Collection</span>
+          <h2 class="section-title">Featured Books of the Month</h2>
+          <p class="section-description">Handpicked publications highly recommended by our editorial review board.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="category-tabs reveal">
+          <button class="tab-btn active" data-filter="all">All Genres</button>
+          <button class="tab-btn" data-filter="technology">Technology</button>
+          <button class="tab-btn" data-filter="science">Science</button>
+          <button class="tab-btn" data-filter="business">Business</button>
+          <button class="tab-btn" data-filter="selfhelp">Self Help</button>
+        </div>
+
+        <!-- Books Grid -->
+        <div class="books-grid">
+
+          <!-- Book Card 1 -->
+          <div class="book-card reveal delay-1" data-category="technology">
+            <span class="book-badge">25% OFF</span>
+            <div class="book-cover-container">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80"
+                alt="The Pragmatic Programmer" class="book-cover-img">
+            </div>
+            <div class="book-info">
+              <span class="book-category-tag">Technology</span>
+              <h3 class="book-title">The Pragmatic Programmer</h3>
+              <p class="book-author">Andrew Hunt &amp; David Thomas</p>
+              <div class="book-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-score">4.9 (480)</span>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">$29.99 <span class="old-price">$39.99</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(1)">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 2 -->
+          <div class="book-card reveal delay-2" data-category="technology">
+            <span class="book-badge">HOT</span>
+            <div class="book-cover-container">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80"
+                alt="Clean Architecture" class="book-cover-img">
+            </div>
+            <div class="book-info">
+              <span class="book-category-tag">Technology</span>
+              <h3 class="book-title">Clean Architecture</h3>
+              <p class="book-author">Robert C. Martin</p>
+              <div class="book-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-score">4.8 (320)</span>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">$34.50 <span class="old-price">$45.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(2)">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 3 -->
+          <div class="book-card reveal delay-3" data-category="technology">
+            <div class="book-cover-container">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80"
+                alt="Designing Data Systems" class="book-cover-img">
+            </div>
+            <div class="book-info">
+              <span class="book-category-tag">Technology</span>
+              <h3 class="book-title">Designing Data Systems</h3>
+              <p class="book-author">Martin Kleppmann</p>
+              <div class="book-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-score">4.9 (510)</span>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">$39.99 <span class="old-price">$49.99</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(3)">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 4 -->
+          <div class="book-card reveal delay-4" data-category="science">
+            <div class="book-cover-container">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80"
+                alt="Artificial Intelligence Era" class="book-cover-img">
+            </div>
+            <div class="book-info">
+              <span class="book-category-tag">Science</span>
+              <h3 class="book-title">Artificial Intelligence Era</h3>
+              <p class="book-author">Dr. Stuart Russell</p>
+              <div class="book-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-score">4.7 (210)</span>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">$27.80 <span class="old-price">$35.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(4)">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="books.html" class="btn btn-secondary">View All 50,000+ Books <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         9. Best Sellers Section
+         ========================================== -->
+    <section id="bestsellers" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Top Chart Winners</span>
+          <h2 class="section-title">All-Time Best Sellers</h2>
+          <p class="section-description">The most popular titles bought and loved by thousands of readers worldwide.</p>
+        </div>
+
+        <div class="books-grid">
+
+          <!-- Book Card 5 -->
+          <div class="book-card reveal delay-1" data-category="business">
+            <span class="book-badge">#1 SELLER</span>
+            <div class="book-cover-container">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=500&q=80"
+                alt="Psychology of Money" class="book-cover-img">
+            </div>
+            <div class="book-info">
+              <span class="book-category-tag">Business</span>
+              <h3 class="book-title">Psychology of Money</h3>
+              <p class="book-author">Morgan Housel</p>
+              <div class="book-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-score">4.9 (1,200)</span>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">$22.00 <span class="old-price">$28.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(5)">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 6 -->
+          <div class="book-card reveal delay-2" data-category="selfhelp">
+            <span class="book-badge">MUST READ</span>
+            <div class="book-cover-container">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=500&q=80"
+                alt="Atomic Habits" class="book-cover-img">
+            </div>
+            <div class="book-info">
+              <span class="book-category-tag">Self Help</span>
+              <h3 class="book-title">Atomic Habits</h3>
+              <p class="book-author">James Clear</p>
+              <div class="book-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-score">5.0 (2,450)</span>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">$24.99 <span class="old-price">$32.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(6)">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 7 -->
+          <div class="book-card reveal delay-3" data-category="history">
+            <div class="book-cover-container">
+              <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=500&q=80"
+                alt="Sapiens" class="book-cover-img">
+            </div>
+            <div class="book-info">
+              <span class="book-category-tag">History</span>
+              <h3 class="book-title">Sapiens: A Brief History</h3>
+              <p class="book-author">Yuval Noah Harari</p>
+              <div class="book-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-score">4.8 (980)</span>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">$26.50 <span class="old-price">$34.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(7)">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 8 -->
+          <div class="book-card reveal delay-4" data-category="fiction">
+            <div class="book-cover-container">
+              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=500&q=80"
+                alt="The Great Gatsby" class="book-cover-img">
+            </div>
+            <div class="book-info">
+              <span class="book-category-tag">Fiction</span>
+              <h3 class="book-title">The Great Gatsby</h3>
+              <p class="book-author">F. Scott Fitzgerald</p>
+              <div class="book-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-score">4.6 (640)</span>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">$15.99 <span class="old-price">$19.99</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(8)">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         10. Portfolio / Book Gallery
+         ========================================== -->
+    <section id="gallery" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Visual Showcase</span>
+          <h2 class="section-title">Book Cover Gallery</h2>
+          <p class="section-description">A aesthetic preview of iconic cover artworks in our physical showroom.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80"
+              alt="Gallery Book 1" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Pragmatic Code</h4>
+              <p style="font-size: 0.85rem;">Hardcover Special Edition</p>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal delay-2">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80"
+              alt="Gallery Book 2" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Clean Architecture</h4>
+              <p style="font-size: 0.85rem;">Author Signed Copy</p>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal delay-3">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80"
+              alt="Gallery Book 3" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Data Intensive Apps</h4>
+              <p style="font-size: 0.85rem;">Collector's Leather Cover</p>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal delay-4">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80"
+              alt="Gallery Book 4" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">AI Era</h4>
+              <p style="font-size: 0.85rem;">Illustrated Release</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         11. Team Section
+         ========================================== -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Meet Our Staff</span>
+          <h2 class="section-title">The Minds Behind BookHaven</h2>
+          <p class="section-description">Dedicated bookworms, editors, and customer curators working for you.</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card reveal delay-1">
+            <div class="team-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                alt="Eleanor Vance" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <h3 class="team-name">Eleanor Vance</h3>
+            <p class="team-role">Store Founder &amp; CEO</p>
+            <div class="team-socials">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card reveal delay-2">
+            <div class="team-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                alt="David Miller" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <h3 class="team-name">David Miller</h3>
+            <p class="team-role">Store Manager</p>
+            <div class="team-socials">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card reveal delay-3">
+            <div class="team-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
+                alt="Sophia Chen" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <h3 class="team-name">Sophia Chen</h3>
+            <p class="team-role">Customer Support Lead</p>
+            <div class="team-socials">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card reveal delay-4">
+            <div class="team-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80"
+                alt="Marcus Brody" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <h3 class="team-name">Marcus Brody</h3>
+            <p class="team-role">Marketing Lead</p>
+            <div class="team-socials">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         12. Pricing / Membership Plans
+         ========================================== -->
+    <section id="pricing" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Reader Club Membership</span>
+          <h2 class="section-title">Choose Your Subscription Plan</h2>
+          <p class="section-description">Unlock exclusive discounts, monthly free audiobooks, and priority author
+            events.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Basic Plan -->
+          <div class="pricing-card reveal delay-1">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Basic Reader</h3>
+              <div class="pricing-price">$9.99 <span>/ month</span></div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> 10% Discount on all Purchases</li>
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Free Standard Delivery</li>
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Monthly Book Club Newsletter</li>
+              <li class="disabled"><i class="fas fa-times-circle"></i> Free Monthly Audiobook</li>
+              <li class="disabled"><i class="fas fa-times-circle"></i> VIP Author Meet &amp; Greet</li>
+            </ul>
+            <button class="btn btn-secondary" style="margin-top: auto;"
+              onclick="window.showToast('Subscribed to Basic Reader plan!', 'success')">Join Basic Plan</button>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="pricing-card featured reveal delay-2">
+            <span class="pricing-ribbon">Most Popular</span>
+            <div class="pricing-header">
+              <h3 class="pricing-title">Premium Reader</h3>
+              <div class="pricing-price">$19.99 <span>/ month</span></div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> 20% Discount on all Purchases</li>
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Free Priority Express Shipping</li>
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> 1 Free Monthly Audiobook</li>
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Early Access to New Releases</li>
+              <li class="disabled"><i class="fas fa-times-circle"></i> VIP Author Meet &amp; Greet</li>
+            </ul>
+            <button class="btn btn-primary" style="margin-top: auto;"
+              onclick="window.showToast('Subscribed to Premium Reader plan!', 'success')">Join Premium Plan</button>
+          </div>
+
+          <!-- VIP Reader Plan -->
+          <div class="pricing-card reveal delay-3">
+            <div class="pricing-header">
+              <h3 class="pricing-title">VIP Reader Pass</h3>
+              <div class="pricing-price">$39.99 <span>/ month</span></div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> 30% Unlimited Discount</li>
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Free Same-Day Shipping</li>
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> 3 Free Monthly Audiobooks</li>
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Signed Collector Editions</li>
+              <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> VIP Author Meet &amp; Greet Pass
+              </li>
+            </ul>
+            <button class="btn btn-accent" style="margin-top: auto;"
+              onclick="window.showToast('Subscribed to VIP Reader Pass!', 'success')">Join VIP Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         13. Testimonials Section (Carousel)
+         ========================================== -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Community Feedback</span>
+          <h2 class="section-title">What Our Readers Say</h2>
+          <p class="section-description">Read genuine reviews from book lovers, developers, and avid collectors.</p>
+        </div>
+
+        <div id="testimonials-slider" class="testimonials-slider reveal">
+          <div class="testimonial-track">
+
+            <!-- Slide 1 -->
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p class="testimonial-text">
+                "BookHaven is by far the best online bookstore I have used. As a CS student, their tech catalog delivery
+                was super fast and books arrived in flawless condition!"
+              </p>
+              <div class="testimonial-user">
+                <img src="images/team/member1.svg" alt="User Avatar" class="testimonial-avatar">
+                <div style="text-align: left;">
+                  <h4 style="font-size: 1.05rem;">Alexander Wright</h4>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">Computer Science Student</p>
+                  <div style="color: var(--accent-dark); font-size: 0.85rem;">★★★★★</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p class="testimonial-text">
+                "The Premium Membership plan saved me over $200 this year alone! Plus their customer support resolved my
+                address change within minutes. Highly recommended!"
+              </p>
+              <div class="testimonial-user">
+                <img src="images/team/member3.svg" alt="User Avatar" class="testimonial-avatar">
+                <div style="text-align: left;">
+                  <h4 style="font-size: 1.05rem;">Emily Watson</h4>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">Senior Product Designer</p>
+                  <div style="color: var(--accent-dark); font-size: 0.85rem;">★★★★★</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p class="testimonial-text">
+                "Finding rare hardcover developer references used to be a pain until I found BookHaven. Fantastic search
+                capabilities and smooth dark mode experience!"
+              </p>
+              <div class="testimonial-user">
+                <img src="images/team/member2.svg" alt="User Avatar" class="testimonial-avatar">
+                <div style="text-align: left;">
+                  <h4 style="font-size: 1.05rem;">Marcus Vance</h4>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">Full-Stack Engineer</p>
+                  <div style="color: var(--accent-dark); font-size: 0.85rem;">★★★★★</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Dots Pagination -->
+          <div class="slider-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         14. Frequently Asked Questions (FAQ Accordion)
+         ========================================== -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">Find quick answers to common queries regarding ordering, shipping, and returns.
+          </p>
+        </div>
+
+        <div class="faq-accordion reveal">
+          <div class="accordion-item active">
+            <button class="accordion-header">
+              <span>How can I order books from BookHaven?</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Ordering is simple! Browse our catalog, click "Add to Cart" on your desired books, open your shopping
+                cart drawer, and click "Proceed to Checkout" to securely complete your payment.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>What payment methods do you accept?</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>We accept major Credit/Debit Cards (Visa, MasterCard, American Express), PayPal, Apple Pay, Google Pay,
+                and BookHaven Gift Cards.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Do you offer international shipping?</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, we ship to over 120 countries worldwide via DHL Express and FedEx International with full
+                door-to-door tracking.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>What is your return and refund policy?</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>We offer a hassle-free 30-day return policy. If your book arrives damaged or is not what you expected,
+                return it in original condition for a full refund or exchange.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         15. Contact Section & Map
+         ========================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Our Customer Support</h2>
+          <p class="section-description">Have a question or custom book inquiry? Send us a message and we'll reply
+            promptly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-box reveal-left">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <h4 style="font-size: 1.1rem;">Store Address</h4>
+                <p style="font-size: 0.9rem;">742 Knowledge Way, Tech District, Silicon Valley, CA 94025</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4 style="font-size: 1.1rem;">Email Us</h4>
+                <p style="font-size: 0.9rem;">support@bookhaven.com / sales@bookhaven.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4 style="font-size: 1.1rem;">Call Support</h4>
+                <p style="font-size: 0.9rem;">+1 (800) 555-BOOK / +1 (415) 888-2026</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4 style="font-size: 1.1rem;">Operating Hours</h4>
+                <p style="font-size: 0.9rem;">Mon - Sat: 8:00 AM - 10:00 PM EST<br>Sun: 10:00 AM - 6:00 PM EST</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form reveal-right">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address *</label>
+                  <input type="email" id="contact-email" class="form-control" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="contact-phone" class="form-control" placeholder="+1 (555) 000-0000">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject *</label>
+                <input type="text" id="contact-subject" class="form-control" placeholder="Book Inquiry / Order Help"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" class="form-control" placeholder="Write your message here..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Embedded Google Map -->
+        <div class="map-container reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.647318721245!2d-122.08385768469242!3d37.42199997982548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1625000000000!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" title="BookHaven Store Map Location">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         16. Newsletter Subscription Banner
+         ========================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-card reveal">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get weekly recommendations, exclusive flash sale coupons, and early invites to author webinars delivered
+            straight to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+            <button type="submit" class="btn btn-accent">Subscribe Now <i class="fas fa-bell"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       17. Professional Footer
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1.2rem; color: #FFFFFF;">
+            <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+            <div class="logo-text">Book<span style="color: var(--accent);">Haven</span></div>
+          </a>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            BookHaven is your premier online bookstore bringing world-class literature, technology guides, and fiction
+            directly to your doorstep.
+          </p>
+          <div class="team-socials" style="justify-content: flex-start;">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="books.html">Browse Catalog</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#pricing">Membership Plans</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <div class="footer-links">
+            <a href="books.html">Computer Science</a>
+            <a href="books.html">Business &amp; Finance</a>
+            <a href="books.html">Self Help &amp; Mindset</a>
+            <a href="books.html">Science &amp; Physics</a>
+            <a href="books.html">Fiction &amp; Literature</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Store Location</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.8rem;">
+            <i class="fas fa-map-marker-alt" style="color: var(--accent); margin-right: 0.5rem;"></i> 742 Knowledge Way,
+            Silicon Valley, CA
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.8rem;">
+            <i class="fas fa-envelope" style="color: var(--accent); margin-right: 0.5rem;"></i> info@bookhaven.com
+          </p>
+          <p style="font-size: 0.9rem;">
+            <i class="fas fa-phone" style="color: var(--accent); margin-right: 0.5rem;"></i> +1 (800) 555-BOOK
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 BookHaven Inc. All Rights Reserved. Crafted with HTML5, CSS3 &amp; Vanilla JavaScript.</p>
+        <div style="display: flex; gap: 1.2rem;">
+          <a href="#" style="color: #A7A9BE;">Privacy Policy</a>
+          <a href="#" style="color: #A7A9BE;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       18. Floating Back-to-Top Button
+       ========================================== -->
+  <button id="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ==========================================
+       19. Cart Drawer & Overlay
+       ========================================== -->
+  <div id="modal-overlay" class="modal-overlay"></div>
+
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3 style="font-size: 1.2rem;"><i class="fas fa-shopping-bag" style="color: var(--primary);"></i> Your Shopping
+        Cart</h3>
+      <button id="cart-close-btn" class="btn-icon" aria-label="Close Cart"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div id="cart-body" class="cart-body">
+      <!-- Items dynamically populated via JS -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Subtotal:</span>
+        <span id="cart-subtotal" style="color: var(--primary);">$0.00</span>
+      </div>
+      <button class="btn btn-primary" style="width: 100%;"
+        onclick="window.showToast('Checkout simulated! Order confirmed.', 'success')">
+        Proceed to Checkout <i class="fas fa-credit-card"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       20. Search Modal
+       ========================================== -->
+  <div id="search-modal" class="search-modal">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;">
+      <h3 style="font-size: 1.2rem;"><i class="fas fa-search" style="color: var(--primary);"></i> Search Book Store</h3>
+      <button id="search-close-btn" class="btn-icon" aria-label="Close Search"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div class="search-input-wrapper">
+      <i class="fas fa-search"></i>
+      <input type="text" id="modal-search-input" placeholder="Type book title, author, or category...">
+    </div>
+
+    <div id="search-results-list" class="search-results-list">
+      <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; padding: 1rem;">Start typing to search
+        for books by title or author...</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+
+</html>

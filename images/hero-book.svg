@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C4AB6" />
+      <stop offset="50%" stop-color="#8E6CEF" />
+      <stop offset="100%" stop-color="#4D2DB7" />
+    </linearGradient>
+    <linearGradient id="accent-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="100%" stop-color="#FFB300" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#1A0933" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Glowing background elements -->
+  <circle cx="250" cy="300" r="220" fill="url(#hero-bg)" opacity="0.15" />
+
+  <!-- 3D Book Graphic -->
+  <g filter="url(#shadow)">
+    <!-- Book Spine 3D effect -->
+    <path d="M70,70 L95,85 L95,565 L70,550 Z" fill="#432888" />
+    
+    <!-- Main Cover -->
+    <rect x="95" y="85" width="330" height="480" rx="16" fill="url(#hero-bg)" />
+    
+    <!-- Cover Border Accent -->
+    <rect x="115" y="105" width="290" height="440" rx="10" fill="none" stroke="url(#accent-gold)" stroke-width="2" stroke-opacity="0.6" stroke-dasharray="8 4" />
+
+    <!-- Abstract Art Shapes on Cover -->
+    <circle cx="240" cy="240" r="75" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.25" />
+    <path d="M 160 300 C 200 200, 280 400, 360 270" fill="none" stroke="url(#accent-gold)" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Icon on Cover -->
+    <path d="M 220 230 C 220 230, 235 225, 240 232 C 245 225, 260 230, 260 230 L 260 260 C 260 260, 245 255, 240 262 C 235 255, 220 260, 220 260 Z" fill="none" stroke="#FFFFFF" stroke-width="3" />
+
+    <!-- Book Title & Author Typography -->
+    <text x="240" y="360" font-family="'Poppins', sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">THE ART OF CODE</text>
+    <text x="240" y="390" font-family="'Inter', sans-serif" font-size="14" font-weight="500" fill="#FFD54F" text-anchor="middle" letter-spacing="3">MASTER EDITION</text>
+    
+    <line x1="190" y1="415" x2="290" y2="415" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1" />
+    
+    <text x="240" y="445" font-family="'Inter', sans-serif" font-size="13" font-weight="400" fill="#E0D4FC" text-anchor="middle">By Alex Vance</text>
+
+    <!-- Pages Edge -->
+    <path d="M 425,95 L 440,85 L 440,550 L 425,565 Z" fill="#EAEAEA" />
+    <line x1="432" y1="88" x2="432" y2="558" stroke="#D0D0D0" stroke-width="1" />
+  </g>
+
+  <!-- Floating Badge 1: Bestseller -->
+  <g transform="translate(330, 60)" filter="url(#shadow)">
+    <rect x="0" y="0" width="130" height="42" rx="21" fill="#FFFFFF" />
+    <circle cx="21" cy="21" r="13" fill="#FFD54F" />
+    <text x="21" y="26" font-family="'Poppins', sans-serif" font-size="14" font-weight="bold" fill="#6C4AB6" text-anchor="middle">★</text>
+    <text x="73" y="26" font-family="'Poppins', sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle">#1 Bestseller</text>
+  </g>
+
+  <!-- Floating Badge 2: Rating -->
+  <g transform="translate(40, 470)" filter="url(#shadow)">
+    <rect x="0" y="0" width="145" height="48" rx="24" fill="#FFFFFF" />
+    <text x="22" y="30" font-family="'Poppins', sans-serif" font-size="18" font-weight="bold" fill="#6C4AB6">4.9</text>
+    <text x="60" y="22" font-family="'Poppins', sans-serif" font-size="11" font-weight="bold" fill="#FFB300">★★★★★</text>
+    <text x="60" y="36" font-family="'Inter', sans-serif" font-size="10" fill="#777777">2,450 Reviews</text>
+  </g>
+</svg>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | BookHaven Store</title>
+  <meta name="description" content="Get in touch with BookHaven's customer support team. Send us your inquiry or visit our showroom location in Silicon Valley.">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="book-loader">
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+    </div>
+    <div class="preloader-text">Loading Contact Page...</div>
+  </div>
+
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+        <div class="logo-text">Book<span>Haven</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="books.html" class="nav-link">Books</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon search-toggle-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="btn-icon cart-toggle-btn" aria-label="Cart"><i class="fas fa-shopping-cart"></i><span class="badge cart-count">0</span></button>
+        <button class="btn-icon theme-toggle-btn" aria-label="Theme"><i class="fas fa-moon"></i></button>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: calc(var(--header-height) + 2rem);">
+    
+    <section class="section" style="background: var(--bg-alt);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Connect With Us</span>
+          <h1 class="section-title">We'd Love To Hear From You</h1>
+          <p class="section-description">Fill out the form below or drop by our showroom for a hot cup of coffee and a great book discussion.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-box">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <h4>Main Showroom Address</h4>
+                <p style="font-size: 0.9rem;">742 Knowledge Way, Tech District, Silicon Valley, CA 94025</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email Support</h4>
+                <p style="font-size: 0.9rem;">support@bookhaven.com / help@bookhaven.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Phone Hotline</h4>
+                <p style="font-size: 0.9rem;">+1 (800) 555-BOOK / +1 (415) 888-2026</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>Opening Hours</h4>
+                <p style="font-size: 0.9rem;">Mon - Sat: 8:00 AM - 10:00 PM EST<br>Sun: 10:00 AM - 6:00 PM EST</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Sarah Connor" required>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address *</label>
+                  <input type="email" id="contact-email" class="form-control" placeholder="sarah@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="contact-phone" class="form-control" placeholder="+1 (555) 123-4567">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject *</label>
+                <input type="text" id="contact-subject" class="form-control" placeholder="Order status / Special order" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" class="form-control" placeholder="Describe your question..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.647318721245!2d-122.08385768469242!3d37.42199997982548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1625000000000!5m2!1sen!2sus"
+            allowfullscreen="" 
+            loading="lazy" 
+            title="Map Location">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2026 BookHaven Inc. All Rights Reserved.</p>
+        <a href="index.html" style="color: var(--accent);">Back to Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-overlay" class="modal-overlay"></div>
+
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Shopping Cart</h3>
+      <button id="cart-close-btn" class="btn-icon"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="cart-body" class="cart-body"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span>Subtotal:</span><span id="cart-subtotal">$0.00</span></div>
+      <button class="btn btn-primary" style="width: 100%;" onclick="window.showToast('Checkout simulated!', 'success')">Checkout</button>
+    </div>
+  </div>
+
+  <div id="search-modal" class="search-modal">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+      <h3>Search Book Store</h3>
+      <button id="search-close-btn" class="btn-icon"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="search-input-wrapper"><i class="fas fa-search"></i><input type="text" id="modal-search-input" placeholder="Type book title..."></div>
+    <div id="search-results-list" class="search-results-list"></div>
+  </div>
+
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

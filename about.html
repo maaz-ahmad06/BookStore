@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | BookHaven Online Bookstore</title>
+  <meta name="description" content="Learn about BookHaven's history, mission, vision, and the passionate team dedicated to delivering high-quality literature worldwide.">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="book-loader">
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+    </div>
+    <div class="preloader-text">Loading About BookHaven...</div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+        <div class="logo-text">Book<span>Haven</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="books.html" class="nav-link">Books</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon search-toggle-btn" aria-label="Search Books"><i class="fas fa-search"></i></button>
+        <button class="btn-icon cart-toggle-btn" aria-label="View Shopping Cart"><i class="fas fa-shopping-cart"></i><span class="badge cart-count">0</span></button>
+        <button class="btn-icon theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: calc(var(--header-height) + 2rem);">
+    
+    <!-- Hero Banner -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(108,74,182,0.1), rgba(142,108,239,0.05)); text-align: center;">
+      <div class="container">
+        <span class="section-subtitle">Our Story</span>
+        <h1 class="section-title" style="font-size: 3rem;">Driven By Literature &amp; Innovation</h1>
+        <p class="section-description" style="max-width: 700px; margin: 0 auto;">
+          From a humble indie book shop to a global digital literature platform, discover how BookHaven empowers minds across 120+ countries.
+        </p>
+      </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="section">
+      <div class="container about-grid">
+        <div class="reveal-left">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80" alt="BookHaven Store Interior" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; max-height: 480px; object-fit: cover;">
+        </div>
+        <div class="reveal-right">
+          <span class="section-subtitle">Who We Are</span>
+          <h2 class="section-title">Bridging Readers With Timeless Wisdom</h2>
+          <p style="margin-bottom: 1.2rem; color: var(--text-muted);">
+            Established in 2016 in Silicon Valley, California, BookHaven started as a physical sanctuary for computer science students and engineers seeking technical manuals. Over the past decade, we expanded our curation to cover all major genres.
+          </p>
+          <p style="margin-bottom: 1.5rem; color: var(--text-muted);">
+            Today, our team of dedicated literary curators inspects every publication for paper quality, binding durability, and intellectual merit.
+          </p>
+
+          <div style="display: flex; gap: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            <div>
+              <h3 style="font-size: 2rem; color: var(--primary);">50,000+</h3>
+              <p style="font-size: 0.85rem;">Titles in Stock</p>
+            </div>
+            <div>
+              <h3 style="font-size: 2rem; color: var(--primary);">120+</h3>
+              <p style="font-size: 0.85rem;">Countries Served</p>
+            </div>
+            <div>
+              <h3 style="font-size: 2rem; color: var(--primary);">99.4%</h3>
+              <p style="font-size: 0.85rem;">Satisfaction Rate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Leadership</span>
+          <h2 class="section-title">Meet Our Executive Team</h2>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card reveal delay-1">
+            <div class="team-img-wrapper"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Eleanor Vance" style="width:100%; height:100%; object-fit:cover;"></div>
+            <h3 class="team-name">Eleanor Vance</h3>
+            <p class="team-role">Store Founder &amp; CEO</p>
+          </div>
+
+          <div class="team-card reveal delay-2">
+            <div class="team-img-wrapper"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="David Miller" style="width:100%; height:100%; object-fit:cover;"></div>
+            <h3 class="team-name">David Miller</h3>
+            <p class="team-role">Store Manager</p>
+          </div>
+
+          <div class="team-card reveal delay-3">
+            <div class="team-img-wrapper"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Sophia Chen" style="width:100%; height:100%; object-fit:cover;"></div>
+            <h3 class="team-name">Sophia Chen</h3>
+            <p class="team-role">Customer Experience Lead</p>
+          </div>
+
+          <div class="team-card reveal delay-4">
+            <div class="team-img-wrapper"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Marcus Brody" style="width:100%; height:100%; object-fit:cover;"></div>
+            <h3 class="team-name">Marcus Brody</h3>
+            <p class="team-role">Marketing Manager</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2026 BookHaven Inc. All Rights Reserved.</p>
+        <a href="index.html" style="color: var(--accent);">Back to Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-overlay" class="modal-overlay"></div>
+
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Shopping Cart</h3>
+      <button id="cart-close-btn" class="btn-icon"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="cart-body" class="cart-body"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span>Subtotal:</span><span id="cart-subtotal">$0.00</span></div>
+      <button class="btn btn-primary" style="width: 100%;" onclick="window.showToast('Checkout simulated!', 'success')">Checkout</button>
+    </div>
+  </div>
+
+  <div id="search-modal" class="search-modal">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+      <h3>Search Book Store</h3>
+      <button id="search-close-btn" class="btn-icon"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="search-input-wrapper"><i class="fas fa-search"></i><input type="text" id="modal-search-input" placeholder="Type book title..."></div>
+    <div id="search-results-list" class="search-results-list"></div>
+  </div>
+
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

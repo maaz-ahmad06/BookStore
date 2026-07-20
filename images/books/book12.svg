@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F3E46" />
+      <stop offset="100%" stop-color="#52796F" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="420" rx="12" fill="url(#bg_12)" />
+  <rect x="15" y="15" width="270" height="390" rx="8" fill="none" stroke="#CAD2C5" stroke-width="2" opacity="0.6" />
+  <circle cx="150" cy="140" r="48" fill="#CAD2C5" opacity="0.25" />
+  <path d="M 130 140 C 140 125, 160 125, 170 140 C 160 155, 140 155, 130 140 Z" fill="none" stroke="#CAD2C5" stroke-width="3" />
+  <circle cx="150" cy="140" r="8" fill="#CAD2C5" />
+  <text x="150" y="240" font-family="'Poppins', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">DEEP WORK MASTERCLASS</text>
+  <text x="150" y="265" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#CAD2C5" text-anchor="middle">RULES FOR FOCUSED SUCCESS</text>
+  <line x1="80" y1="310" x2="220" y2="310" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1" />
+  <text x="150" y="355" font-family="'Inter', sans-serif" font-size="13" fill="#E2E8F0" text-anchor="middle">By Cal Newport</text>
+</svg>

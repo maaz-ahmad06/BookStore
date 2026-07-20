@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Catalog | BookHaven Store</title>
+  <meta name="description" content="Browse our complete collection of computer science books, business strategies, self-help, science, and fiction.">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="book-loader">
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+    </div>
+    <div class="preloader-text">Loading Catalog...</div>
+  </div>
+
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+        <div class="logo-text">Book<span>Haven</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="books.html" class="nav-link active">Books</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon search-toggle-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="btn-icon cart-toggle-btn" aria-label="Cart"><i class="fas fa-shopping-cart"></i><span class="badge cart-count">0</span></button>
+        <button class="btn-icon theme-toggle-btn" aria-label="Theme"><i class="fas fa-moon"></i></button>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: calc(var(--header-height) + 2rem);">
+    
+    <section class="section" style="background: var(--bg-alt);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Catalog Collection</span>
+          <h1 class="section-title">Explore All Books</h1>
+          <p class="section-description">Filter by category or search by keyword to find your desired publication.</p>
+        </div>
+
+        <!-- Catalog Toolbar -->
+        <div style="background: var(--bg-card); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); margin-bottom: 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div class="search-input-wrapper" style="margin-bottom: 0; min-width: 280px; flex-grow: 1;">
+            <i class="fas fa-search"></i>
+            <input type="text" id="catalog-search-input" placeholder="Search title or author in catalog..." style="border-width: 1px; padding-top: 0.75rem; padding-bottom: 0.75rem;">
+          </div>
+
+          <div class="category-tabs" style="margin-bottom: 0;">
+            <button class="tab-btn active" data-filter="all">All</button>
+            <button class="tab-btn" data-filter="technology">Tech</button>
+            <button class="tab-btn" data-filter="business">Business</button>
+            <button class="tab-btn" data-filter="selfhelp">Self Help</button>
+            <button class="tab-btn" data-filter="science">Science</button>
+            <button class="tab-btn" data-filter="history">History</button>
+            <button class="tab-btn" data-filter="fiction">Fiction</button>
+          </div>
+        </div>
+
+        <!-- Full Catalog Grid -->
+        <div class="books-grid" id="catalog-books-grid">
+          
+          <div class="book-card" data-category="technology">
+            <span class="book-badge">25% OFF</span>
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80" alt="Book 1" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Technology</span>
+              <h3 class="book-title">The Pragmatic Programmer</h3>
+              <p class="book-author">Andrew Hunt &amp; David Thomas</p>
+              <div class="book-rating"><span class="stars">★★★★★</span><span class="rating-score">4.9</span></div>
+              <div class="book-footer">
+                <div class="book-price">$29.99 <span class="old-price">$39.99</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(1)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="technology">
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80" alt="Book 2" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Technology</span>
+              <h3 class="book-title">Clean Architecture</h3>
+              <p class="book-author">Robert C. Martin</p>
+              <div class="book-rating"><span class="stars">★★★★★</span><span class="rating-score">4.8</span></div>
+              <div class="book-footer">
+                <div class="book-price">$34.50 <span class="old-price">$45.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(2)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="technology">
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80" alt="Book 3" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Technology</span>
+              <h3 class="book-title">Designing Data Systems</h3>
+              <p class="book-author">Martin Kleppmann</p>
+              <div class="book-rating"><span class="stars">★★★★★</span><span class="rating-score">4.9</span></div>
+              <div class="book-footer">
+                <div class="book-price">$39.99 <span class="old-price">$49.99</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(3)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="science">
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80" alt="Book 4" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Science</span>
+              <h3 class="book-title">Artificial Intelligence Era</h3>
+              <p class="book-author">Dr. Stuart Russell</p>
+              <div class="book-rating"><span class="stars">★★★★☆</span><span class="rating-score">4.7</span></div>
+              <div class="book-footer">
+                <div class="book-price">$27.80 <span class="old-price">$35.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(4)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="business">
+            <span class="book-badge">#1 SELLER</span>
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=500&q=80" alt="Book 5" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Business</span>
+              <h3 class="book-title">Psychology of Money</h3>
+              <p class="book-author">Morgan Housel</p>
+              <div class="book-rating"><span class="stars">★★★★★</span><span class="rating-score">4.9</span></div>
+              <div class="book-footer">
+                <div class="book-price">$22.00 <span class="old-price">$28.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(5)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="selfhelp">
+            <span class="book-badge">POPULAR</span>
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=500&q=80" alt="Book 6" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Self Help</span>
+              <h3 class="book-title">Atomic Habits</h3>
+              <p class="book-author">James Clear</p>
+              <div class="book-rating"><span class="stars">★★★★★</span><span class="rating-score">5.0</span></div>
+              <div class="book-footer">
+                <div class="book-price">$24.99 <span class="old-price">$32.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(6)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="history">
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=500&q=80" alt="Book 7" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">History</span>
+              <h3 class="book-title">Sapiens: A Brief History</h3>
+              <p class="book-author">Yuval Noah Harari</p>
+              <div class="book-rating"><span class="stars">★★★★★</span><span class="rating-score">4.8</span></div>
+              <div class="book-footer">
+                <div class="book-price">$26.50 <span class="old-price">$34.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(7)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="fiction">
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=500&q=80" alt="Book 8" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Fiction</span>
+              <h3 class="book-title">The Great Gatsby</h3>
+              <p class="book-author">F. Scott Fitzgerald</p>
+              <div class="book-rating"><span class="stars">★★★★☆</span><span class="rating-score">4.6</span></div>
+              <div class="book-footer">
+                <div class="book-price">$15.99 <span class="old-price">$19.99</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(8)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="science">
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=500&q=80" alt="Book 9" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Science</span>
+              <h3 class="book-title">Quantum Physics 101</h3>
+              <p class="book-author">Dr. Michio Kaku</p>
+              <div class="book-rating"><span class="stars">★★★★☆</span><span class="rating-score">4.7</span></div>
+              <div class="book-footer">
+                <div class="book-price">$31.00 <span class="old-price">$40.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(9)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="technology">
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=500&q=80" alt="Book 10" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Technology</span>
+              <h3 class="book-title">Creative UI/UX Design</h3>
+              <p class="book-author">Sarah Jenkins</p>
+              <div class="book-rating"><span class="stars">★★★★★</span><span class="rating-score">4.9</span></div>
+              <div class="book-footer">
+                <div class="book-price">$36.00 <span class="old-price">$45.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(10)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="technology">
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=500&q=80" alt="Book 11" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Technology</span>
+              <h3 class="book-title">Cybersecurity Fundamentals</h3>
+              <p class="book-author">Marcus Sterling</p>
+              <div class="book-rating"><span class="stars">★★★★★</span><span class="rating-score">4.8</span></div>
+              <div class="book-footer">
+                <div class="book-price">$32.50 <span class="old-price">$42.00</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(11)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-card" data-category="selfhelp">
+            <div class="book-cover-container"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=500&q=80" alt="Book 12" class="book-cover-img"></div>
+            <div class="book-info">
+              <span class="book-category-tag">Self Help</span>
+              <h3 class="book-title">Deep Work Masterclass</h3>
+              <p class="book-author">Cal Newport</p>
+              <div class="book-rating"><span class="stars">★★★★★</span><span class="rating-score">4.9</span></div>
+              <div class="book-footer">
+                <div class="book-price">$21.99 <span class="old-price">$27.99</span></div>
+                <button class="btn btn-primary btn-sm" onclick="window.BookStore.addCart(12)"><i class="fas fa-cart-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2026 BookHaven Inc. All Rights Reserved.</p>
+        <a href="index.html" style="color: var(--accent);">Back to Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-overlay" class="modal-overlay"></div>
+
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Shopping Cart</h3>
+      <button id="cart-close-btn" class="btn-icon"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="cart-body" class="cart-body"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span>Subtotal:</span><span id="cart-subtotal">$0.00</span></div>
+      <button class="btn btn-primary" style="width: 100%;" onclick="window.showToast('Checkout simulated!', 'success')">Checkout</button>
+    </div>
+  </div>
+
+  <div id="search-modal" class="search-modal">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+      <h3>Search Book Store</h3>
+      <button id="search-close-btn" class="btn-icon"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="search-input-wrapper"><i class="fas fa-search"></i><input type="text" id="modal-search-input" placeholder="Type book title..."></div>
+    <div id="search-results-list" class="search-results-list"></div>
+  </div>
+
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/validation.js"></script>
+  <script>
+    // Live catalog search handler
+    document.addEventListener('DOMContentLoaded', () => {
+      const catalogInput = document.getElementById('catalog-search-input');
+      const cards = document.querySelectorAll('#catalog-books-grid .book-card');
+      
+      if (catalogInput) {
+        catalogInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          cards.forEach(card => {
+            const title = card.querySelector('.book-title').textContent.toLowerCase();
+            const author = card.querySelector('.book-author').textContent.toLowerCase();
+            if (title.includes(query) || author.includes(query)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
